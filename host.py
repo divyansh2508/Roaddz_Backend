@@ -4,13 +4,13 @@ from flask_restful import Resource, Api
 app = Flask(__name__)
 api=Api(app)
 
-@app.route('/')
-def index():
-    return '<h1>The website Page</h1>'
+# @app.route('/')
+# def index():
+#     return '<h1>The website Page</h1>'
 
-@app.route('/app')
-def myapp():
-    return '<h1>The app page</h1>'
+# @app.route('/app')
+# def myapp():
+#     return '<h1>The app page</h1>'
 
 class Hello(Resource):
     def get(self):
